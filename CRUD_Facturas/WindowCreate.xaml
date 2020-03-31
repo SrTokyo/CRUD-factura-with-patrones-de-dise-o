@@ -1,0 +1,28 @@
+﻿<Window x:Class="CRUD_Facturas.WindowCreate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRUD_Facturas"
+        mc:Ignorable="d"
+        Title="WindowCreate" Height="700" Width="1000">
+    <Grid>
+        <TextBlock Margin="454,47,406,569" FontSize="30"> Clients </TextBlock>
+        <ComboBox Margin="297,129,340,506" Name="Clientes" GotMouseCapture="Clientes_GotMouseCapture" >
+        </ComboBox>
+        <TextBlock Margin="466,212,420,399" FontSize="30" RenderTransformOrigin="0.776,0.466"> Items </TextBlock>
+        <TextBlock Margin="234,290,201,355" FontSize="15">    los items se agregaran el boton add, puede seleccionar cantos quiera, uno tras otro</TextBlock>
+        <ComboBox Margin="297,350,340,288" Name="Canasta" GotMouseCapture="Canasta_GotMouseCapture" >
+        </ComboBox>
+        <Button Margin="694,355,170,288" Click="Button_Click"> ADD </Button>
+        <ListBox Margin="34,350,714,45" Name="ListaDeCompras"></ListBox>
+        <Button Margin="694,137,170,506" Click="Button_Click_1" Content="Select"/>
+        <Button Margin="739,517,52,102" Click="Button_Click_2" Content="Generate Factura"/>
+        <ComboBox Margin="297,517,340,122" Name="Estado" >
+            <ComboBoxItem> Pago </ComboBoxItem>
+            <ComboBoxItem> No Pago </ComboBoxItem>
+        </ComboBox>
+        <TextBlock Margin="454,439,432,172" FontSize="30" RenderTransformOrigin="0.776,0.466"><Run Text="Estado"/></TextBlock>
+        <TextBlock Margin="423,566,406,79" FontSize="15"><Run Text="Por defecto -- No pago"/></TextBlock>
+    </Grid>
+</Window>

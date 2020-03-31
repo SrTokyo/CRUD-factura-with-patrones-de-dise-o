@@ -1,0 +1,19 @@
+﻿<Window x:Class="CRUD_Facturas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRUD_Facturas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30">CRUD DE UNA FACTURA</TextBlock>
+        <Button Margin="304,88,304,287" RenderTransformOrigin="0.462,1.832" Click="create_Click">Crear Factura</Button>
+        <Button Margin="304,220,304,155" RenderTransformOrigin="0.462,1.832" Click="look_Click">Look a Factura</Button>
+        <Button Margin="304,150,304,225" RenderTransformOrigin="0.462,1.832" Click="update_Click">Update Factura</Button>
+        <Button Margin="304,285,304,90" RenderTransformOrigin="0.462,1.832" Click="delete_Click">Delete Factura</Button>
+        <Button Margin="304,349,304,26" RenderTransformOrigin="0.462,1.832" Click="exit_Click">Save and Exit</Button>
+        <Button Margin="64,193,544,182" RenderTransformOrigin="0.462,1.832" Click="client_Click" Content="Crear Cliete"/>
+        <Button Margin="544,193,64,182" RenderTransformOrigin="0.462,1.832" Click="item_Click" Content="Crear Item"/>
+    </Grid>
+</Window>
